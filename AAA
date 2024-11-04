@@ -5,7 +5,7 @@ public class InputOutput {
 	public static void main(String[] args) {
 		
 		Scanner allinput = new Scanner(System.in);
-		String fname, lname, fullname, address, year, month, day, dob;
+		String fname, lname, fullname, address, year, month, day, dob, msg;
 		
 		System.out.println("What is your first name?");
 		fname = allinput.nextLine();
@@ -28,6 +28,9 @@ public class InputOutput {
 		
 		dob = month + "/" + day + "/" + year;
 
+		msg = "My name is " + fullname + ". I am live in " + address + ". My day of birth is " + dob + ".";
+		
+		System.out.println(msg);
 	}
 
 }
