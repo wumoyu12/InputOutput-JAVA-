@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class InputOutput {
+
+	public static void main(String[] args) {
+		
+		Scanner allinput = new Scanner(System.in);
+		String fname, lname, fullname, address, year, month, day, dob;
+		
+		System.out.println("What is your first name?");
+		fname = allinput.nextLine();
+		System.out.println("What is your last name?");
+		lname = allinput.nextLine();
+		
+		fullname = fname + " " + lname;
+		
+		System.out.println("Where do you live?(Please enter your address)");
+		address = allinput.nextLine();
+		
+		System.out.println("Which year were you born?(Please Enter the Numbers)");
+		year = allinput.nextLine();
+		
+		System.out.println("Which month of " + year + " were you born?");
+		month = allinput.nextLine();
+		
+		System.out.println("Which day of " + month + " were you born?");
+		day = allinput.nextLine();
+		
+		dob = month + "/" + day + "/" + year;
+
+	}
+
+}
