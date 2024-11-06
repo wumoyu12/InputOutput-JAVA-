@@ -1,3 +1,7 @@
+//Name:Moyu Wu
+//Start Date:11/4/24
+//End Date:
+
 import java.util.Scanner;
 
 public class InputOutput {
@@ -17,18 +21,18 @@ public class InputOutput {
 		System.out.println("Where do you live?(Please enter your address)");
 		address = allinput.nextLine();
 		
-		System.out.println("Which year were you born?(Please Enter the Numbers)");
+		System.out.println("Which year were you born?");
 		year = allinput.nextLine();
 		
-		System.out.println("Which month of " + year + " were you born?");
+		System.out.println("Which month of " + year + " were you born?(Please Enter the Numbers)");
 		month = allinput.nextLine();
-		
-		System.out.println("Which day of " + month + " were you born?");
+				
+		System.out.println("Which day of that month were you born?");
 		day = allinput.nextLine();
 		
 		dob = month + "/" + day + "/" + year;
 
-		msg = "My name is " + fullname + ". I am live in " + address + ". My day of birth is " + dob + ".";
+		msg = "Hello, my name is " + fullname + ". I am live in " + address + ". And my date of birth is " + dob + ".";
 		
 		System.out.println(msg);
 	}
